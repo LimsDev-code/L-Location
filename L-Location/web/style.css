@@ -1,0 +1,102 @@
+/* Basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent; /* Dark color for a modern design */
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Booking card */
+.booking-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Main title */
+h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Field labels */
+label {
+    color: #bbbbbb;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Input fields and selectors */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Vehicle preview */
+.vehicle-preview {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.vehicle-preview img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    background: #2c2c2c;
+    padding: 10px;
+}
+
+/* Reserve button */
+.reserve-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #6a5acd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: #5948b8;
+}
+
+/* Transition effect for interactive elements */
+input:focus, select:focus {
+    background: #333333;
+    border: 1px solid #6a5acd;
+    transition: background 0.3s ease, border 0.3s ease;
+}

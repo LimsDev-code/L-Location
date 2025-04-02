@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="booking-card">
+            <h2>Vehicle Rental</h2>
+
+            <!-- Vehicle selection -->
+            <label for="vehicle">Choose a vehicle:</label>
+            <select id="vehicle" onchange="updateVehicleImage()">
+                <option value="sport">Jugular</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+            </select>
+            
+            <!-- Vehicle preview -->
+            <div class="vehicle-preview">
+                <img id="vehicle-image" src="img/default.png" alt="Vehicle preview">
+            </div>
+            
+            <!-- Rental duration selection -->
+            <label for="guests">Rental duration:</label>
+            <select id="guests">
+                <option value="0.5">30 minutes</option>
+                <option value="1">1 hour</option>
+                <option value="2">2 hours</option>
+                <option value="3">3 hours</option>
+            </select>
+
+            <!-- Reservation button -->
+            <button id="lSpawn" class="reserve-btn">Reserve</button>
+        </div>
+    </div>
+</body>
+</html>
